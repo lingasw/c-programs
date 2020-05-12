@@ -1,0 +1,26 @@
+#include <stdio.h> /* function declaration */
+void next(void);
+static int counter = 7;/* global variable */
+int a=10;/* global variable */
+main() 
+{
+ //static int counter=10;
+ //int a=10;
+ while(counter<10) 
+ {
+    
+    
+      next();
+      counter++;  
+      a++;
+      printf("%d",a);
+     
+ }
+return 0;
+}
+void next( void )
+{    /* function definition */
+      static int iteration ; /* local static variable */
+   iteration ++;
+   printf("iteration=%d and counter= %d  %d\n", iteration, counter,a);
+}

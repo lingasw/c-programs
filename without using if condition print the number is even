@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+    int n;
+    char* arr[2]={"fail","pass"};
+    printf("enter the numer  ");
+    scanf("%d",&n);
+    printf("entered numer is %s",arr[n%2]);
+}

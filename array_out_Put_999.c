@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 { 
     int i=0,j,count=0,f=0;
@@ -11,7 +10,7 @@ int main()
         {
            if((a[i]+a[j])==9)
            {
-            printf("the two numbers are = %d,%d",a[i],a[j]);
+            printf("the two numbers are = %d,%d\n",a[i],a[j]);
             b[f]=a[i]+a[j];
                f++;
             count+=1;

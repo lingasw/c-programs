@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    
+    char a[5]="acde";
+    //char a[5];
+    char b[5];
+    printf("enter the string below 5 charecters\n");
+   /* for(int i=0;i<4;i++)
+    {
+        scanf("%c",&a[i]);
+    }*/
+    int l=strlen(a),j=0,i;
+    printf("%d",l);
+    for(i=l-1;0<=i;i--)
+    {
+        b[j]=a[i];
+        j++;
+    }
+    printf("\n");
+    printf("string is reverced\n");
+    for(j=0;j<5;j++)
+    {
+        printf("%c",b[j]);
+    }
+    printf("\n");
+   // l=strlen(a);
+    for(j=0;j<4;j++)
+    {
+      if(a[l-1]==a[j])
+       {    
+            printf("a[%c]==b[%c]\n",a[l-1],a[j]);
+            printf("given string is polindrom\n");
+       }
+      else
+      {
+            printf("given string is not a polindrom\n");
+      }
+      l--;
+    }
+}

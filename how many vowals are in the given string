@@ -1,0 +1,44 @@
+#include<stdio.h>
+void main()
+{
+    char b[100];
+    char c[6]={"aeiou"};
+    int count_a=0,count_e=0,count_i=0,count_o=0,count_u=0,i;
+    printf("enter up to 10 word name\n");
+    for(i=0;i<10;i++)
+    {
+    scanf("%c",&b[i]);
+    }
+    for(i=0;b[i]!='\0';i++)
+    {
+    //    for(j=0;c[i]!='\0';j++)
+    if(b[i]==c[0]||b[i]==c[1]||b[i]==c[2]||b[i]==c[3]||b[i]==c[4])
+    {
+        
+        if(b[i]==c[0])
+        {
+            count_a+=1;
+        }
+        if(b[i]==c[1])
+        {
+            count_e+=1;
+        }
+        if(b[i]==c[2])
+        {
+            count_i+=1;
+        }
+        if(b[i]==c[3])
+        {
+            
+            count_o+=1;
+        }
+        if(b[i]==c[4])
+        {
+            count_u+=1;
+        }
+    }
+   // else
+     //  printf("in this word no vovals are not avalable\n");
+    }
+    printf("entered string have a=%d,e=%d,i=%d,o=%d,u=%d",count_a,count_e,count_i,count_o,count_u);
+}

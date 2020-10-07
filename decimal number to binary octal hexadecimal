@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+void fun(int num,int a);
+{
+    int num;
+   // char a[100];
+    printf("enter number");
+    scanf("%d",&num);
+    printf("choose the options\n1)is binary \n 2) is octel\n 3)hexadecimal\n");
+    scanf("%d",&n);
+    switch(n)
+    {
+        
+        case 1: printf("binary numbers is");
+                fun(num,2);
+                break;
+        case 2:printf("octal numbers is");
+               fun(num,8);
+                break;
+        case 3:printf("octal numbers is");
+             fun(num,16);
+                break;
+    }
+    void fun(int num,int a)
+    {
+        char b[100];
+        int i,rem;
+        
+        for(i=0;i<num;i++)
+        {
+            rem=num%a;
+            num=num/a;
+         if(num>9 && num<16)
+         {
+             
+             b[i++]=num-10+'A';
+             pritf("%s",b[i]);
+         }
+         else
+         {
+             b[i++]=num+'0';
+             printf("%d",b[i]);
+         }
+        }
+    }
